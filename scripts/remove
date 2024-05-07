@@ -43,20 +43,20 @@ ynh_secure_remove --file="/var/log/$app"
 
 ynh_secure_remove --file="/run/$app"
 ynh_secure_remove --file="/var/lib/$app"
-ynh_secure_remove --file="/usr/bin/prosody"
-ynh_secure_remove --file="/usr/bin/prosodyctl"
-ynh_secure_remove --file="/usr/bin/prosody-migrator"
+ynh_secure_remove --file="/usr/bin/metronome"
+ynh_secure_remove --file="/usr/bin/metronomectl"
+ynh_secure_remove --file="/usr/bin/metronome-migrator"
 
 #=================================================
 # ENABLE METRONOME
 #=================================================
-ynh_script_progression --message="Enabling Metronome..."
+# ynh_script_progression --message="Enabling Metronome..."
 
-if systemctl list-unit-files metronome.service &>/dev/null
-then
-	systemctl enable metronome.service --quiet
-	ynh_systemd_action --service_name="metronome" --action="start"
-fi
+# if systemctl list-unit-files metronome.service &>/dev/null
+# then
+# 	systemctl enable metronome.service --quiet
+# 	ynh_systemd_action --service_name="metronome" --action="start"
+# fi
 
 #=================================================
 # END OF SCRIPT

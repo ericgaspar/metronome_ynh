@@ -1,13 +1,13 @@
 [Unit]
 ### see man systemd.unit
-Description=Prosody XMPP Server
+Description=Metronome XMPP Server
 After=network.target remote-fs.target postgresql.service mariadb.service mysql.service
 Documentation=https://prosody.im/doc
 
 [Service]
 ### See man systemd.service ###
 # With this configuration, systemd takes care of daemonization
-# so Prosody should be configured with daemonize = false
+# so Metronome should be configured with daemonize = false
 Type=simple
 
 # Not sure if this is needed for 'simple'

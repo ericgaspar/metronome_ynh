@@ -1,26 +1,29 @@
 packaging_format = 2
 
-id = "prosody"
-name = "Prosody"
+id = "metronome"
+name = "Metronome"
 description.en = "Modern XMPP communication server"
 description.fr = "Serveur de communication XMPP moderne"
 
-version = "0.12.4~ynh2"
+version = "4.0.3~ynh1"
 
-maintainers = ["yalh76"]
+maintainers = []
 
 [upstream]
 license = "MIT"
-website = "https://prosody.im/"
-admindoc = "https://prosody.im/doc"
-code = "https://hg.prosody.im/"
+website = "https://archon.im/metronome-im/"
+admindoc = "https://archon.im/metronome-im/documentation/"
+code = "https://github.com/maranda/metronome"
 
 [integration]
 yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = false
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -29,8 +32,8 @@ ram.runtime = "50M"
 
 [resources]
         [resources.sources.main]
-        url = "https://prosody.im/downloads/source/prosody-0.12.4.tar.gz"
-        sha256 = "47d712273c2f29558c412f6cdaec073260bbc26b7dda243db580330183d65856"
+        url = "https://github.com/maranda/metronome/archive/refs/tags/v4.0.3.tar.gz"
+        sha256 = "594ff7ebf15c38a73559c9ac6b5cd010b6c5aa8ed28ab68d5530ce0eb07bf81c"
 
     [resources.system_user]
 

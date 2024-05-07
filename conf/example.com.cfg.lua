@@ -8,8 +8,8 @@ VirtualHost "example.com"
 	-- Note that old-style SSL on port 5223 only supports one certificate, and will always
 	-- use the global one.
 	ssl = {
-		key = "/etc/prosody/certs/example.com.key";
-		certificate = "/etc/prosody/certs/example.com.crt";
+		key = "/etc/metronome/certs/example.com.key";
+		certificate = "/etc/metronome/certs/example.com.crt";
 		}
 
 ------ Components ------

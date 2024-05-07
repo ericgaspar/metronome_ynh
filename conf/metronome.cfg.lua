@@ -1,7 +1,7 @@
 -- Prosody Example Configuration File
 --
 -- Information on configuring Prosody can be found on our
--- website at https://prosody.im/doc/configure
+-- website at https://archon.im/metronome-im/configuration/
 --
 -- Tip: You can check that the syntax of this file is correct
 -- when you have finished by running this command:
