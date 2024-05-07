@@ -1,3 +1,1 @@
-This is a dummy admin doc for this app
-
-The app install dir is `__INSTALL_DIR__`
+* Prosody will not replace the XMPP service Metronome integrated in YunoHost, it has been implemented for some specific apps that require Prosody
